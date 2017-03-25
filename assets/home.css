@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.top-container {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	position: absolute; 
+	width: 100%;
+	left: 0;
+}
+
+.my-good-photo {
+	background-image: url("my-photo.jpg");
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	padding:0;
+	position: absolute;
+	z-index: -1;
+	height:500px;
+	width:100%;
+}
+
+.top-bar {
+	background-color: rgba(0,0,255,0.3);
+	position: absolute;
+	width: 100%;
+}
+
+.container {
+	color: white;
+	margin: 0 auto;
+    max-width: 48rem;
+	font-family: dedecus;
+	z-index: 1;
+}
+
+
+.top-bar .left-container h1{
+	display: inline-block;
+    text-align: left;
+    float:left;
+    margin:0;
+    margin-top: -10px;
+}
+
+.top-bar .right-container h3 {
+	display: inline-block;
+    float: right;
+    margin: 0;
+}
+
+
+@font-face {
+	font-family: primetime;
+	src: url("primetime.ttf");
+}
+
+@font-face {
+	font-family: dual300;
+	src: url("Dual-300.ttf");
+}
+
+@font-face {
+	font-family: dedecus;
+	src: url("dedecus.ttf");
+}
