@@ -82,10 +82,7 @@ li{
 	list-style: none;
 }
 
-@font-face {
-	font-family: primetime;
-	src: url("primetime.ttf");
-}
+
 
 @font-face {
 	font-family: dual300;
