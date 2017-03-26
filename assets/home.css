@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: auto;
-	position: absolute; 
+	position: relative;
 	width: 100%;
 	left: 0;
 }
@@ -18,15 +18,15 @@ body {
 	background-size: cover;
 	margin: 0;
 	padding:0;
-	position: absolute;
-	z-index: -1;
+	position: relative;
+	z-index: 0;
 	height:500px;
 	width:100%;
 }
 
 .top-bar {
 	background-color: rgba(0,0,255,0.3);
-	position: absolute;
+	position: fixed;
 	width: 100%;
 }
 
@@ -35,7 +35,7 @@ body {
 	margin: 0 auto;
     max-width: 48rem;
 	font-family: dedecus;
-	z-index: 1;
+	z-index: 0;
 }
 
 
@@ -53,6 +53,32 @@ body {
     margin: 0;
 }
 
+.posts-header {
+	text-align: center;
+	font-family: allerta;
+}
+
+.post-container {
+	font-family: allerta;
+	max-width: 36rem;
+	margin: auto;
+}
+
+.post-link {
+	display: inline;
+	position: relative;
+	float : left;
+}
+
+.post-date {
+	display: inline;
+	position: relative;
+	float : right;
+}
+
+li{
+	list-style: none;
+}
 
 @font-face {
 	font-family: primetime;
@@ -67,4 +93,9 @@ body {
 @font-face {
 	font-family: dedecus;
 	src: url("dedecus.ttf");
+}
+
+@font-face {
+	font-family: allerta;
+	src: url("allerta_medium.ttf");
 }

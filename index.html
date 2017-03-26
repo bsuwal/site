@@ -1,3 +1,8 @@
+---
+title: home
+---
+
+
 <!DOCTYPE html>
 
 <head>
@@ -6,12 +11,9 @@
 	<meta name="viewport" content="width=device-width" />
 </head>
 
-
-
 <body>
 	<div class = "top-container">
 		<div class ="my-good-photo">
-            <!--<img src = "assets/my-photo.jpg" alt = "My photo"> -->
         	<div class = "top-bar">
         		<div class = container>
         		<div class = "left-container"><h1> Bhushan Suwal </h1> </div>
@@ -20,5 +22,18 @@
 			</div>
         </div>
 	</div>
-
+	<div class = "posts-header"> <p> Hi, I am Bhushan. I have been trying to blog on and off for a few years now, so this week I finally said Fuck It and built this website. The blog is not very interesting yet, but stay tuned, my lovely website visitor.</p></div>
+	 <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <div class = "post-container">
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <br>
+      </li>
+    {% endfor %}
+  </ul>
 </body>
