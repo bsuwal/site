@@ -82,6 +82,16 @@ li{
 	list-style: none;
 }
 
+footer {
+	max-width: 48rem;
+	margin: auto;
+	font-family: allerta;
+}
+
+.left-container h1 a{
+	color: white;
+	text-decoration: none;
+}
 @font-face {
 	font-family: dual300;
 	src: url("Dual-300.ttf");
