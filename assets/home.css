@@ -114,15 +114,11 @@ footer {
 	font-family: allerta;
 }
 
-.left-container h1 a {
+.left-container h1 a, .right-container h3 a {
 	color: white;
 	text-decoration: none;
 }
 
-.right-container h3 a {
-	color: white;
-	text-decoration: none;
-}
 
 @font-face {
 	font-family: dual300;
