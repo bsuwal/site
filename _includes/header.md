@@ -1,6 +1,6 @@
  <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="assets/home.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/home.css" />
     <meta name="viewport" content="width=device-width" />
   </head>
   <div class = "top-container">
