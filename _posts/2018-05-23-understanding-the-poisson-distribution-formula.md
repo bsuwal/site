@@ -59,8 +59,6 @@ ${\color{blue} !!!}$ We get this from the definition of $e$. Remember, $e = lim_
 Khan Academy has a great video on this.
 \\
 TODO: Add link to Khan Academy \\
-Write the Binomial Dis eqn out \\
-Draw a shoe and a shoe shop \\
 Cool applications of the Poisson distribution in my daily life \\
 Requirements of a Poisson Dist \\
 
