@@ -1,15 +1,14 @@
-body {
+.homepage-photo {
+	background-image: url("ptown.jpg");
+	background-position: center;
+	background-size: cover;
 	margin: 0;
-	padding: 0;
-}
-
-.top-container {
-	margin: 0;
-	padding: 0;
-	height: auto;
+	padding:0;
+	padding-right: 10px;
 	position: relative;
-	width: 100%;
-	left: 0;
+	z-index: 0;
+	height:400px;
+	width:100%;
 }
 
 .my-good-photo {
@@ -18,10 +17,16 @@ body {
 	background-size: cover;
 	margin: 0;
 	padding:0;
+	padding-right: 10px;
 	position: relative;
 	z-index: 0;
 	height:500px;
 	width:100%;
+}
+
+.post-img {
+	height: 100%;
+	width: 100%;
 }
 
 .post-top-photo {
@@ -30,6 +35,7 @@ body {
 	background-size: cover;
 	margin: 0;
 	padding:0;
+	padding-right: 10px;
 	position: relative;
 	z-index: 0;
 	height:250px;
@@ -37,7 +43,7 @@ body {
 }
 
 .top-bar {
-	background-color: rgba(0,0,255,0.3);
+	background-color: rgba(0,0,255,0.4);
 	position: fixed;
 	width: 100%;
 }
@@ -49,7 +55,6 @@ body {
 	font-family: dedecus;
 	z-index: 0;
 }
-
 
 .top-bar .left-container h1{
 	display: inline-block;
@@ -68,12 +73,27 @@ body {
 .blog-post-header {
 	margin-top: 20px;
 	text-align: center;
-	font-size: 180%;
+	font-size: 150%;
+	font-family: allerta;
 }
 
-.blog-post-content {
+.home-body {
 	text-align: left;
 	font-family: allerta;
+	max-width: 48rem;
+	margin: auto;
+}
+
+.about-body {
+	text-align: left;
+	font-family: allerta;
+	max-width: 48rem;
+	margin: auto;
+}
+
+.blog-post-body {
+	text-align: left;
+	font-size: 120%;
 	max-width: 48rem;
 	margin: auto;
 }
@@ -88,7 +108,7 @@ body {
 }
 .post-container {
 	font-family: allerta;
-	max-width: 36rem;
+	max-width: 44rem;
 	margin: auto;
 }
 
@@ -109,20 +129,17 @@ li{
 }
 
 footer {
+	/*position: fixed;*/
+	font-family: allerta;
 	max-width: 48rem;
 	margin: auto;
-	font-family: allerta;
+    bottom: 0;
+    width: 100%;
 }
 
 .left-container h1 a, .right-container h3 a {
 	color: white;
 	text-decoration: none;
-}
-
-
-@font-face {
-	font-family: dual300;
-	src: url("Dual-300.ttf");
 }
 
 @font-face {

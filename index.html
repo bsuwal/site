@@ -3,21 +3,27 @@ title: Bhushan Suwal
 layout: default
 ---
 
-	<div class = "blog-post-content"> <p> Hi, I am Bhushan. The blog is not very interesting yet, but stay tuned, my lovely website visitor.</p>
-  <hr></div>
+  
+	<div class = "home-body"> 
+  <p>This is a placeholder for something witty.</p>
+  <hr>
 
 	 <ul class="post-list">
     {% for post in site.posts %}
+      <div class = "post-container">
       <li>
-        <div class = "post-container">
-        <h2>
+        
+        <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        </h3>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </div>
+        
         <br>
       </li>
+      </div>
     {% endfor %}
   </ul>
-
+  {% include footer.md %}
+  </div>
+  
 
