@@ -54,4 +54,3 @@ Which is how we get the Poisson probability! Woohoo!
 ${\color{red} !!!}$ Notice that the term $n$ on the upper line appears k times, so when the expression is multiplied out we get $n^k$. This term dominates as $n$ increases so for large $n$ we can ignore the other terms. \\
 ${\color{blue} !!!}$ We get this from the definition of $e$. Remember, $e = lim_{n\rightarrow\infty} \Big(1 + \frac{1}{n}\Big)^{n}$ and $e^{\lambda} = lim_{n\rightarrow\infty} \Big(1 + \frac{\lambda}{n}\Big)^{n}$  
 
-
