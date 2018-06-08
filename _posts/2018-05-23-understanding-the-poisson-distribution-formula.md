@@ -55,10 +55,3 @@ ${\color{red} !!!}$ Notice that the term $n$ on the upper line appears k times, 
 ${\color{blue} !!!}$ We get this from the definition of $e$. Remember, $e = lim_{n\rightarrow\infty} \Big(1 + \frac{1}{n}\Big)^{n}$ and $e^{\lambda} = lim_{n\rightarrow\infty} \Big(1 + \frac{\lambda}{n}\Big)^{n}$  
 
 
-**Recommended references:**
-Khan Academy has a great video on this.
-\\
-TODO: Add link to Khan Academy \\
-Cool applications of the Poisson distribution in my daily life \\
-Requirements of a Poisson Dist \\
-
