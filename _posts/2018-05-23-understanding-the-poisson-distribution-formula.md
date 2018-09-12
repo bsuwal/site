@@ -7,7 +7,9 @@ The Poisson probability has a very unintuitive formula:
 \begin{equation}
 P(X = k) = \frac{\lambda^{k}}{k!}e^{-\lambda}
 \end{equation}
-where $\lambda$ is the expected number of successes. Let's unpack this.
+where $\lambda$ is the expected number of successes. 
+
+I know, outrageous math. This blog post is an attempt to understand why this formula works.
 
 Say you own a shoe shop. You have noticed that on average 10 customers come to your shop in an hour. But sometimes more than 10 customers show up within an hour, and sometimes less than 10. How could you find the probability that exactly 7 customers show up in any chosen hour, given that you know that the customers show up at random?
 
