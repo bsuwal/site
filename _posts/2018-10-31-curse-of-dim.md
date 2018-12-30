@@ -25,7 +25,7 @@ This means that most of the "substance" of a dimension space is increasingly con
 ### But what does this mean for me, a high-dimensional data ninja?
 It means that any method that has the notion of distance performs poorly on high dimensional data. Take the k-nearest neighbors method for example. To find a point's k-nearest neigbors, I have to calculate the distance of each point in the dataset from my point. If this is very high dimensional data, then there is so much distance between the data points that distance stops being an important differentiator for classification. When the distances are so high, the choice of a nearest neighbor is effectively random. 
 
-### How do I deal with this curse?
+### How do I deal with this?
 If high dimensional data seems to be a problem, then it seems plausible that a good thing to do reduce the number of dimensions! There seem to be a number of ways[^solution_post] to deal with this, but watch out for my next post on PCA, a very popular dimensionality reduction technique!
 
 As an aside, it is very interesting how neural networks have somehow overcome the curse of dimensionality. They operate on very high number of features and yet produce excellent classifiers. I believe that why this happens is not understood very well. 
