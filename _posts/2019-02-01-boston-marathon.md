@@ -14,7 +14,7 @@ I first found this little gem:
 
 ![Histogram of Boston Marathon Finishers]({{ "/assets/marathon_analysis/histogram.jpg"}}){:class="post-img"}
 
-That drop from right before the 4 hour mark to right after is noticably sharp. It looks like a normal distribution made of Jello was slapped on the side with a plank.
+That drop from right before the 4 hour mark to right after is noticably sharp. The decline in numbers is so steep at a very conveniently round number. Suspicious?
 
 My theory is that people make it a personal goal to finish within 4 hours. I can definitely see that people would infintely prefer a time of 03:58:00 than a time of 4:02:00, and care nowhere near the same for a time of 04:14:00 vs a 04:18:00. The former is a badge of honor, the latter is a unglamorous statistic. [Update: I have learned that [4 hour marathons are a thing.]]
 
