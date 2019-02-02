@@ -8,13 +8,13 @@ categories: exploratory
 
 I ran 18 miles for the first time ever last weekend and was absolutely gassed. I struggle a lot with pacing - what pace should I aim for at different stages of the run? I don't want to run too fast in the beginning and have no fuel at the end [^pyakhov], but what's a good pace for a semi-fit 23 year old male? My masculinity is just toxic enough that I don't want to be at the tail end of the race in the midst of 80 year olds.  
 
-So I got hold of a dataset of the Boston Marathon finishers of 2016 and 2017 from Kaggle, and went down a little rabbit hole of interesting findings.
+So I got hold of [a Kaggle dataset] of the Boston Marathon finishers of 2016 and 2017, and went down a little rabbit hole of interesting findings.
 
 I first found this little gem:
 
 ![Histogram of Boston Marathon Finishers]({{ "/assets/marathon_analysis/histogram.jpg"}}){:class="post-img"}
 
-That drop is sharp! 
+That drop from right before the 4 hour mark to right after is noticably sharp. It looks like a normal distribution made of Jello was slapped on the side with a plank.
 
 My theory is that people make it a personal goal to finish within 4 hours. I can definitely see that people would infintely prefer a time of 03:58:00 than a time of 4:02:00, and care nowhere near the same for a time of 04:14:00 vs a 04:18:00. The former is a badge of honor, the latter is a unglamorous statistic. [Update: I have learned that [4 hour marathons are a thing.]]
 
@@ -63,3 +63,4 @@ I am reading Nassim Nicholas Taleb's _The Black Swan_ right now and I could almo
 [4 hour marathons are a thing.]: https://www.realbuzz.com/articles-interests/running/article/tips-on-how-to-run-a-sub-4-hour-marathon/
 [support me]: https://www.crowdrise.com/o/en/campaign/tuftsboston2019/bhushansuwal
 [Code]: https://github.com/bsuwal/Boston_Marathon_Analysis
+[a Kaggle dataset]: https://www.kaggle.com/rojour/boston-results
