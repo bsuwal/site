@@ -29,6 +29,10 @@
 	width: 100%;
 }
 
+.post-side-img{
+	width: 45%;
+}
+
 .post-top-photo {
 	background-image: url("milky_way.jpg");
 	background-position: center;
@@ -122,10 +126,6 @@
 	display: inline;
 	position: relative;
 	float : right;
-}
-
-li{
-	list-style: none;
 }
 
 footer {
