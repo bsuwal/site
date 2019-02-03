@@ -2,6 +2,7 @@
 layout: post
 title:  "People want to run sub 4-hour marathons"
 categories: exploratory
+comments: true
 ---
 **If you wish to, [support me] on my Boston Marathon run this year!**
 <hr style="width: 100px;" />
@@ -49,11 +50,6 @@ The runners getting in right before the 3 hour mark are the only ones actually s
 
 #### I have learnt the secret to winning the Boston Marathon 2019
 I'm going to round this off this final piece of interest. Go back to the figure with the lineplots of all the marathon finishers and look at the bottom-most one. That orange line represents the time of only two runners over the marathons who finished in the 2:05:00-2:10:00 range, both in 2017. Notice that these two absolute beasts _actually sped up_ at Heartbreak Hill (30K-35K) while the rest struggled. Crazy.
-
-#### Final Musings
-I find it important to mention that what I have done here is merely followed up an observation with some hand-wavy investigations. I offer hypothesises on why the data is as it is ("People are running the last mile faster because of the encouragement!") but they are in no way verified and I would not know how to go around doing that either. I also felt like I was willing the data to fit into my hypothesises. When the graph for the finishers around the 5 hour mark came as it is (with the 5:05:00 finishers speeding up just as much proportionately) I again came up with stories as to why that happened, until I admitted to myself that these were guesses and not explanations.
-I am reading Nassim Nicholas Taleb's _The Black Swan_ right now and I could almost hear him whispering to me: 
->"Anyone looking for confirmation will find enough of it to deceive himself."
 
 <br>
 <hr style="width: 100px;" />
