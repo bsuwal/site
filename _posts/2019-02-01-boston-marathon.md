@@ -15,7 +15,7 @@ I first found this little gem:
 
 ![Histogram of Boston Marathon Finishers]({{ "/assets/marathon_analysis/histogram.jpg"}}){:class="post-img"}
 
-That drop from right before the 4 hour mark to right after is noticably sharp. The decline in numbers is so steep at a very conveniently round number. Suspicious?
+That drop from right before the 4 hour mark to right after is noticeably sharp. The decline in numbers is so steep at a very conveniently round number. Suspicious?
 
 My theory is that people make it a personal goal to finish within 4 hours. I can definitely see that people would infintely prefer a time of 03:58:00 than a time of 4:02:00, and care nowhere near the same for a time of 04:14:00 vs a 04:18:00. The former is a badge of honor, the latter is a unglamorous statistic. [Update: I have learned that [4 hour marathons are a thing.]]
 
@@ -39,7 +39,7 @@ We get this by noticing a general upward bend in the lines.
 But we were talking about people hustling to make the 4-hour mark, so lets zoom into that lineplot a bit:
 ![Pace lineplots of finishers around the 4 hour mark]({{ "/assets/marathon_analysis/4_hr_mark.jpg"}}){:class="post-img"}
 
-The drop in the last 2.2K for the runners that finished right 3:55:00 and 4:00:00 (the green line) is distinctly noticable, especially compared to the other lines that seem to be parallel at that part of the graph.
+The drop in the last 2.2K for the runners that finished right 3:55:00 and 4:00:00 (the green line) is distinctly noticeable, especially compared to the other lines that seem to be parallel at that part of the graph.
 
 The zoom-in into the 3-hour and 5-hour marks offer a similar story:
 
@@ -54,7 +54,7 @@ I'm going to round this off this final piece of interest. Go back to the figure 
 <br>
 <hr style="width: 100px;" />
 <!-- Footnotes -->
-[^pyakhov]: Our Nepali textbook at some point in school had this Russian story translated in Nepali about this guy named Pyakhov who entered a race where all the land one could cover in a day would be theirs. Pyakhov was greedy and ran wayyy too much and collapsed at the end of the day and died. I think a lot about Pyakhov these days.
+[^pyakhov]: Our Nepali textbook at some point in school had this Russian story translated in Nepali about this guy named Pyakhov who entered a race where all the land one could cover in a day would be theirs. Pyakhov was greedy and ran wayyy too much and collapsed at the end of the day and died. I think about Pyakhov a lot these days.
 
 [4 hour marathons are a thing.]: https://www.realbuzz.com/articles-interests/running/article/tips-on-how-to-run-a-sub-4-hour-marathon/
 [support me]: https://www.crowdrise.com/o/en/campaign/tuftsboston2019/bhushansuwal
