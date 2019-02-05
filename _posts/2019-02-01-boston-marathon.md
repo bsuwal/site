@@ -7,7 +7,7 @@ comments: true
 **If you wish to, [support me] on my Boston Marathon run this year!**
 <hr style="width: 100px;" />
 
-I ran 18 miles for the first time ever last weekend and was absolutely gassed. I struggle a lot with pacing - what pace should I aim for at different stages of the run? I don't want to run too fast in the beginning and run out of fuel at the end [^pyakhov], but what's a good pace for a semi-fit 23 year old male? My masculinity is just toxic enough that I don't want to be at the tail end of the race in the midst of 80 year olds.  
+I ran 18 miles for the first time ever last weekend and was absolutely gassed. I struggle a lot with pacing - what pace should I aim for at different stages of the run? I don't want to run too fast in the beginning and run out of fuel at the end. [^pyakhov]  
 
 So I got hold of [a Kaggle dataset] of the Boston Marathon finishers of 2016 and 2017, and went down a little rabbit hole of interesting findings.
 
@@ -48,7 +48,7 @@ The zoom-in into the 3-hour and 5-hour marks offer a similar story:
 
 The runners getting in right before the 3 hour mark are the only ones actually speeding up in that last 2.2K. And that is some clear hustle shown by that green line to finish below 5 hours.
 
-#### I have learnt the secret to winning the Boston Marathon 2019
+#### Winners doing it differently
 I'm going to round this off with this interesting nugget. Go back to the figure with the lineplots of all the marathon finishers and look at the bottom-most one. That orange line represents the time of only two runners over the marathons who finished in the 2:05:00-2:10:00 range, both in 2017. Notice that these two absolute beasts _actually sped up_ at Heartbreak Hill (30K-35K) while the rest struggled. Crazy.
 
 <br>
