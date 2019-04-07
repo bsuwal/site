@@ -4,11 +4,11 @@ title:  "Diffusion Maps I: The Diffusion"
 categories: dimensionality
 comments: true
 ---
-This is Part 1 of a two-part series explaining diffusion maps. Diffusion maps is a dimension reduction technique that I think is so, so cool. In this part we will only be talking about the diffusion part of diffusion maps, where we model how diffusion occurs in graphs. 
+This is Part 1 of a two-part series explaining diffusion maps. I personally find them fascinating, and they are a powerful way to achieve non-linear dimensionality reduction. In this part we will only be talking about the diffusion part of diffusion maps, where we model how diffusion occurs in graphs. 
 
 ### Diffusion helps us answer the question: If I were to start at point A, what is the probability that I end up at point Z after t timesteps?
 
-The roots of the terminology ‘diffusion maps’ comes from physics, I believe. If you release a gas at point A, how can I model how the gas is going to diffuse over time? How do I know where the gas has reached 3 seconds after releasing it? 10 seconds after releasing it? 100 seconds? 
+The roots of the term ‘diffusion maps’ come from physics, I believe. If you release a gas at point A, how can I model how the gas is going to diffuse over time? How do I know where the gas has reached 3 seconds after releasing it? 10 seconds after releasing it? 100 seconds? 
 
 ### Why do I care about diffusion?
 If modeling gas diffusion doesn't sound like the most exciting thing to you, fear not. The idea of how modeling how gases diffuse in the air is generalizable to how any information is disseminated in a graph, and thus is applicable to any graph-based problem. Some non-gas use cases that I can think of right now are:
@@ -65,7 +65,7 @@ Say we start at node A. When we start, we know we are at node A with a probabili
 \end{bmatrix}
 \end{equation}
 
-I want to know what the probabilities of where I will be at the next time step. To transition into the next time step, I slap my current position vector with the _transpose_ of the transition matrix, $P_{T}$. The reason why we use the transpose will be apparent in a bit.
+I want to know what the probabilities of where I will be at the next time step. To transition into the next time step, I slap my current position vector with the _transpose_ of the transition matrix, $P^{T}$. The reason why we use the transpose will be apparent in a bit.
 
 Then, the position vector of the next time step $x_{1}$ would be $P^{T}x_{0} = x_{1}$
 
@@ -199,7 +199,7 @@ D = diag(sum(A,2));
 % this is the transition matrix
 P = inv(D) * A;
 
-% transition a 100 times
+% transition 100 times
 num_time_steps = 100;
 P^num_time_steps
 ```
@@ -227,4 +227,4 @@ Another interesting tidbit: notice that nodes A, B, E and F have 0.15 as the pro
 <!-- Footnotes -->
 [^stalker]: This is why we don’t want stalkers to also be mathematicians.
 [^transition_matrix]: It is a slight pet peeve of mine that the transition matrix seems to referred by $P$ and not $T$ in most literature. The $P$ of course stems from the fact that the transitions are just probabilities.
-[^no_graph_change]: Note that in assuming we can keep applying the same $P$ matrix again and again means that we are implying that our transition matrix $P$ doesn't change, which means that we assume that our graph doesn't change at any point. 
+[^no_graph_change]: Note that by assuming we can keep applying the same $P$ matrix again and again, we are implying that our transition matrix $P$ doesn't change, which means that we assume that our graph doesn't change at any point. 
