@@ -11,11 +11,11 @@ This is Part 1 of a two-part series explaining diffusion maps. I personally find
 The roots of the term ‘diffusion maps’ come from physics, I believe. If you release a gas at point A, how can I model how the gas is going to diffuse over time? How do I know where the gas has reached 3 seconds after releasing it? 10 seconds after releasing it? 100 seconds? 
 
 ### Why do I care about diffusion?
-If modeling gas diffusion doesn't sound like the most exciting thing to you, fear not. The idea of how modeling how gases diffuse in the air is generalizable to how any information is disseminated in a graph, and thus is applicable to any graph-based problem. Some non-gas use cases that I can think of right now are:
+If modeling gas diffusion doesn't sound like the most exciting thing to you, fear not. The idea of modeling how gases diffuse in the air is generalizable to how any information is disseminated in a graph, and thus is applicable to any graph-based problem. Some non-gas use cases that I can think of right now are:
 
 * The famous PageRank algorithm that Google originally used to rank search results used a diffusion-like crawl over the internet to rank web-pages!
 * You could model how news spreads in a social network. If I plant some fake news that goes viral on my feed this second, I could model how many people saw it in 3 days. 
-* You could use this as a clustering technique, in the sense that the you will diffuse to points close to you than to points farther. This is the foundation of a popular method called spectral clustering.
+* You could use this as a clustering technique, in the sense that the you will diffuse to points closer to you faster than to points farther than you. This is the foundation of a popular method called spectral clustering.
 * A weird (and very unrealistic) one but bear with me. Say a friend of yours is backpacking across Asia for a year without a phone and there is no way for you to get in touch with them, but you want to throw them a surprise birthday party. How would you know which city your friend is going to be in? Using diffusion, you could actually make an educated guess on which city your friend will be on their birthday! [^stalker]
 
 ### The framing of the graph problem
@@ -105,7 +105,7 @@ So far, we know that if we were to start at A, then in one time step we arrive a
 
 
 **What if we want to know where we could be in two time steps?**\\
-That is easy. We know where we are at $x_{1}$. To get $x_{2}$, so we could just slap $x_{1}$ with $P^{T}$ again[^no_graph_change], like we did earlier:
+That is easy. We know where we are at $x_{1}$. To get $x_{2}$, we could just slap $x_{1}$ with $P^{T}$ again[^no_graph_change], like we did earlier:
 
 \begin{equation}
 P^{T}x_{1} = 
@@ -137,7 +137,7 @@ P^{T}x_{1} =
 = x_{2}
 \end{equation}
 
-Let's pause and think if the numbers in $x_{2}$ make sense for a bit. Representing each 'hop' or time-step as a '->', let's see all the different nodes we can arrive to in two time-steps.
+Let's pause for a bit and think if the numbers in $x_{2}$ make sense. Representing each 'hop' or time-step as a '->', let's see all the different nodes we can arrive to in two time-steps.
 
 **Ways we can arrive at A:**
 * A -> A -> A 
@@ -161,7 +161,7 @@ Sum of probabilities: $1/3 \times 1/3 + 1/3 \times 1/3 + 1/3 \times 1/4 = 0.3056
 Sum of probabilities: $1/3 \times 1/3 + 1/3 \times 1/3 + 1/3 \times 1/4 = 0.3056$
 
 **Ways we can arrive at D:**
-* A -> C -> C
+* A -> C -> D
 
 Sum of probabilities: $1/3 \times 1/4 = 0.0833$
 
@@ -177,9 +177,9 @@ This means that if we want to know where we will be in $k$ time steps, we can do
 Let us see how this diffusion process represents our earlier examples.
 
 * The PageRank algorithm was trying to solve the problem of ranking web pages by their relative importance. This is roughly what they were thinking: The more important web-pages are the ones that have the more important pages linking to them. At each step of the diffusion, you traverse a hyperlink on a web-page to follow where it leads to.
-* In a social network, the edges could be whether a person is connected to another person. If you have spicy gossip and you introduce it to the network, the transition probabilities are the chances that a person has heard the gossip.
+* In a social network, the edges could be whether a person is connected to another person. If you have spicy gossip and you introduce it to the network, the transition probabilities are the chances that a person will hear the gossip next.
 * You can see why this is useful for clustering. In one time-step, you probably travel to your nearest neighbors. The distance information is just disguised as probabilities.
-* Each time step in diffusion lets you update the probabilities which city your friend probably is in. 
+* Each time step in diffusion lets you update the probabilities of which city your friend probably is in. 
 
 
 ### Extra credit 
