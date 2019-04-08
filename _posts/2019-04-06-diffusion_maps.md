@@ -42,12 +42,12 @@ Next we are going to convert this adjacency matrix into a transition matrix, whe
 \begin{equation}
 P = 
 \begin{bmatrix}
-    1/3 & 1/3 & 1/3 & 0 & 0 & 0 \\\
-    1/3 & 1/3 & 1/3 & 0 & 0 & 0 \\\
-    1/4 & 1/4 & 1/4 & 1/4 & 0 & 0 \\\
-    0 & 0 & 1/4 & 1/4 & 1/4 & 1/4 \\\
-    0 & 0 & 0 & 1/3 & 1/3 & 1/3 \\\
-    0 & 0 & 0 & 1/3 & 1/3 & 1/3 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{3} & 0 & 0 & 0 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{3} & 0 & 0 & 0 \\\
+    \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & 0 & 0 \\\
+    0 & 0 & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} \\\
+    0 & 0 & 0 & \frac{1}{3} & \frac{1}{3} & \frac{1}{3} \\\
+    0 & 0 & 0 & \frac{1}{3} & \frac{1}{3} & \frac{1}{3} \\\
 \end{bmatrix}
 \end{equation}
 
@@ -72,12 +72,12 @@ Then, the position vector of the next time step $x_{1}$ would be $P^{T}x_{0} = x
 \begin{equation}
 P^{T}x_{0} = 
 \begin{bmatrix}
-    1/3 & 1/3 & 1/4 & 0 & 0 & 0 \\\
-    1/3 & 1/3 & 1/4 & 0 & 0 & 0 \\\
-    1/3 & 1/3 & 1/4 & 1/4 & 0 & 0 \\\
-    0 & 0 & 1/4 & 1/4 & 1/3 & 1/3 \\\
-    0 & 0 & 0 & 1/4 & 1/3 & 1/3 \\\
-    0 & 0 & 0 & 1/4 & 1/3 & 1/3 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{4} & 0 & 0 & 0 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{4} & 0 & 0 & 0 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{4} & \frac{1}{4} & 0 & 0 \\\
+    0 & 0 & \frac{1}{4} & \frac{1}{4} & \frac{1}{3} & \frac{1}{3} \\\
+    0 & 0 & 0 & \frac{1}{4} & \frac{1}{3} & \frac{1}{3} \\\
+    0 & 0 & 0 & \frac{1}{4} & \frac{1}{3} & \frac{1}{3} \\\
 \end{bmatrix}
 \begin{bmatrix}
     1\\\
@@ -89,9 +89,9 @@ P^{T}x_{0} =
 \end{bmatrix}
 = 
 \begin{bmatrix}
-    1/3\\\
-    1/3\\\
-    1/3\\\
+    \frac{1}{3}\\\
+    \frac{1}{3}\\\
+    \frac{1}{3}\\\
     0\\\
     0\\\
     0\\\
@@ -110,17 +110,17 @@ That is easy. We know where we are at $x_{1}$. To get $x_{2}$, we could just sla
 \begin{equation}
 P^{T}x_{1} = 
 \begin{bmatrix}
-    1/3 & 1/3 & 1/4 & 0 & 0 & 0 \\\
-    1/3 & 1/3 & 1/4 & 0 & 0 & 0 \\\
-    1/3 & 1/3 & 1/4 & 1/4 & 0 & 0 \\\
-    0 & 0 & 1/4 & 1/4 & 1/3 & 1/3 \\\
-    0 & 0 & 0 & 1/4 & 1/3 & 1/3 \\\
-    0 & 0 & 0 & 1/4 & 1/3 & 1/3 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{4} & 0 & 0 & 0 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{4} & 0 & 0 & 0 \\\
+    \frac{1}{3} & \frac{1}{3} & \frac{1}{4} & \frac{1}{4} & 0 & 0 \\\
+    0 & 0 & \frac{1}{4} & \frac{1}{4} & \frac{1}{3} & \frac{1}{3} \\\
+    0 & 0 & 0 & \frac{1}{4} & \frac{1}{3} & \frac{1}{3} \\\
+    0 & 0 & 0 & \frac{1}{4} & \frac{1}{3} & \frac{1}{3} \\\
 \end{bmatrix}
 \begin{bmatrix}
-    1/3\\\
-    1/3\\\
-    1/3\\\
+    \frac{1}{3}\\\
+    \frac{1}{3}\\\
+    \frac{1}{3}\\\
     0\\\
     0\\\
     0\\\
@@ -144,26 +144,26 @@ Let's pause for a bit and think if the numbers in $x_{2}$ make sense. Representi
 * A -> B -> A
 * A -> C -> A
 
-Sum of probabilities: $1/3 \times 1/3 + 1/3 \times 1/3 + 1/3 \times 1/4 = 0.3056$
+Sum of probabilities: $\frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{4} = 0.3056$
 
 **Ways we can arrive at B:**
 * A -> A -> B
 * A -> B -> B
 * A -> C -> B
 
-Sum of probabilities: $1/3 \times 1/3 + 1/3 \times 1/3 + 1/3 \times 1/4 = 0.3056$
+Sum of probabilities: $\frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{4} = 0.3056$
 
 **Ways we can arrive at C:**
 * A -> A -> C
 * A -> B -> C
 * A -> C -> C
 
-Sum of probabilities: $1/3 \times 1/3 + 1/3 \times 1/3 + 1/3 \times 1/4 = 0.3056$
+Sum of probabilities: $\frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{4} = 0.3056$
 
 **Ways we can arrive at D:**
 * A -> C -> D
 
-Sum of probabilities: $1/3 \times 1/4 = 0.0833$
+Sum of probabilities: $\frac{1}{3} \times \frac{1}{4} = 0.0833$
 
 This makes sense intuitively. A,B and C are more "densely" connected, so if I start in that cluster I should probably end up somewhere in the cluster.
 
