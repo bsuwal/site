@@ -23,6 +23,7 @@
   {% include post_header.md %}
   	<div class = "blog-post-body">
   		<div class = "blog-post-header"> {{ page.title }} </div>
+      <center> {{ page.date | date_to_long_string }} </center>
   		<hr>
         {{ content }}
     {% include footer.md %}
