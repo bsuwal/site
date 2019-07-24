@@ -33,4 +33,3 @@ I am also a huge fan of Google's Digital Wellbeing Initiative. It means that on 
 
 I intend to update this blog post periodically as a record of progress / relapse. 
 
-*Final Note: Everytime I feel an aggressive urge to log back on, I have decided to do a cartwheel instead.*
