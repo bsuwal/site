@@ -33,3 +33,17 @@ I am also a huge fan of Google's Digital Wellbeing Initiative. It means that on 
 
 I intend to update this blog post periodically as a record of progress / relapse. 
 
+****************************************************************************
+#### Day 11, Aug 1 2019
+
+I still feel an unrelenting itch, although it is definitely decreasing. It is especially prominient when I find out that something dramatic happened and is common knowledge to everyone but me. I am unsure if this will ever go away.
+
+Earlier on I did feel lost whenever I was at a browser. What do I do? All the things I spent time on, notably Twitter, are gone. Initially my Netflix use spiked up, but that died down and currently I am very, very updated on the ongoings of this summer's European soccer transfer market. It might be argued that I have just replaced one form of consumption with another, but atleast this consumption is to fuel a hobby/interest so I don't mind it too much. My unproductive time spent online has decreased by about 10x. 
+
+Laughably, I have logged onto LinkedIn every 3 days or so just so I can get something to scroll. But LinkedIn is gross and I log out soon after. 
+
+Sometimes I wonder if I am being too utilitarian with my time. Then I remind myself that I would rather be unsure about this question than know for sure that I was unhappy with my wasted time earlier.
+
+Overall I am happy. My attention span has noticably improved, though I find this to be much more true when I get a good night's sleep the night before.
+
+
