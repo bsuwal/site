@@ -15,7 +15,7 @@ GEM
     colorator (1.1.0)
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
-    concurrent-ruby (1.1.0)
+    concurrent-ruby (1.1.5)
     dnsruby (1.61.2)
       addressable (~> 2.5)
     em-websocket (0.5.1)
@@ -219,7 +219,7 @@ GEM
     ruby-enum (0.7.2)
       i18n
     ruby_dep (1.5.0)
-    rubyzip (1.2.2)
+    rubyzip (2.0.0)
     safe_yaml (1.0.4)
     sass (3.6.0)
       sass-listen (~> 4.0.0)
