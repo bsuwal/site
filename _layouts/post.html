@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% if page.robots %}
+  <meta name="robots" content="{{page.robots}}" />
+{% endif %}
 
 <!-- Script to enable Latex -->
 <script type="text/x-mathjax-config">
@@ -27,5 +30,5 @@
   		<hr>
         {{ content }}
     {% include footer.md %}
-    </div> 
+    </div>
 </html>
