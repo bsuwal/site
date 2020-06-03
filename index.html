@@ -3,21 +3,24 @@ title: Bhushan Suwal
 layout: default
 ---
 
-  
-	<div class = "home-body"> 
+
+	<div class = "home-body">
   <p>"Statistically, the probability of any one of us being here is so small that you'd think the mere fact of existing would keep us all in a contented dazzlement of surprise."  <br><i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- Lewis Thomas, The Lives of a Cell, 1974 </i></p>
   <hr>
 
 	 <ul class="post-list">
     {% for post in site.posts %}
+		{% if post.visible == 0 %}
+		 {% continue %}
+		{% endif %}
       <div class = "post-container">
       <li>
-        
+
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h3>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        
+
         <br>
       </li>
       </div>
@@ -25,5 +28,3 @@ layout: default
   </ul>
   <!-- {% include footer.md %} -->
   </div>
-  
-
