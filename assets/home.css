@@ -78,12 +78,12 @@
 	margin-top: 20px;
 	text-align: center;
 	font-size: 150%;
-	font-family: allerta;
+	font-family: "PT Sans";
 }
 
 .home-body {
 	text-align: left;
-	font-family: allerta;
+	font-family: "PT Sans";
 	max-width: 48rem;
 	margin: auto;
 }
@@ -106,12 +106,12 @@
 	text-align: center;
 	font-style: bold;
 	font-size: 180%;
-	font-family: allerta;
+	font-family: "PT Sans";
 	max-width: 48rem;
 	margin: auto;
 }
 .post-container {
-	font-family: allerta;
+	font-family: "PT Sans";
 	max-width: 44rem;
 	margin: auto;
 }
@@ -130,7 +130,7 @@
 
 footer {
 	/*position: fixed;*/
-	font-family: allerta;
+	font-family: "PT Sans";
 	max-width: 48rem;
 	margin: auto;
     bottom: 0;
